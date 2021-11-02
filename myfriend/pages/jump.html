@@ -1,0 +1,151 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="refresh" content="3; url=[REPLACE]"/>
+    <meta name="description" content="[REPLACEDESC]">
+
+    <title>即将到站 - [REPLACETITLE]- 起飞ing</title>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh
+        }
+
+        .main {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(0deg, #2f66ff, #9940ff 30%, #ee37ff 60%, #ff004c 100%);
+            border-radius: 50%;
+            animation: rotate 1s linear infinite
+        }
+
+        .circle::before {
+            content: "";
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(0deg, #2f66ff, #9940ff 30%, #ee37ff 60%, #ff004c 100%);
+            border-radius: 50%;
+            filter: blur(35px)
+        }
+
+        .circle::after {
+            content: "";
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: #000;
+            border-radius: 50%
+        }
+
+        h1 {
+            position: absolute;
+            color: #fff;
+            font-weight: 700
+        }
+
+        .title {
+            color: #fff;
+            position: absolute;
+            top: 10%;
+            text-shadow: 0 0 30px #fff;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700
+        }
+
+        .title span {
+            font-size: 1.2rem;
+        }
+
+        .text {
+            color: #fff;
+            position: absolute;
+            bottom: 10%;
+            text-shadow: 0 0 30px #fff;
+            font-weight: 700;
+            text-align: center
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0)
+            }
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        @media screen and (max-device-width: 600px) {
+            .title {
+                font-size: 1.2rem;
+            }
+
+            .title span {
+                font-size: 12px;
+            }
+
+            .text {
+                font-size: 12px;
+                bottom: 20%;
+            }
+        }
+    </style>
+</head>
+<body onload="time()">
+<div class="main">
+    <div class="circle"></div>
+    <h1 id="second">3s</h1>
+    <p class="title">ヾ(￣▽￣)Bye~Bye~~~~~即将前往<br>{ [REPLACETITLE] }<br><span>[REPLACEDESC]</span></p>
+    <p class="text">网络交易请谨慎 如遇欺诈或纠纷 请拨打反诈热线：96110。</p>
+</div>
+</body>
+<script>
+    function cs() {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split("=");
+            if (pair[0] == "url") {
+                return pair[1];
+            }
+        }
+        return ("{$url}");//无指定跳转地址，将跳转此网页地址。
+    }
+
+    function time() {
+        var sec = document.getElementById("second");
+        var i = 3;//设置定时时间
+        var timer = setInterval(function () {
+            i--;
+            sec.innerHTML = i + "s";
+            if (i == 1) {
+                // window.location.href = cs();
+            }
+        }, 1000);
+
+        function goBack() {
+            window.history.go(-1);
+        }
+    }
+</script>
+</html>
