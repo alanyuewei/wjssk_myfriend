@@ -270,7 +270,7 @@ class myfriend_Action extends Typecho_Widget implements Widget_Interface_Do
             <title>myfriend 导入数据</title>
 
             <link rel="stylesheet"
-                  href="https://static.myhosts.ga/bootstrap/3.4.1/css/bootstrap.min.css">
+                  href="https://cdn.jsdelivr.net/gh/alanyuewei/static@latest/bootstrap/3.4.1/css/bootstrap.min.css">
             <style>
                 html {
                     padding: 50px 10px;
