@@ -17,7 +17,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 
 ?>
 <link rel="stylesheet"
-      href="https://static.myhosts.ga/bootstrap/3.4.1/css/bootstrap.min.css">
+      href="https://cdn.jsdelivr.net/gh/alanyuewei/static@latest/bootstrap/3.4.1/css/bootstrap.min.css">
 <div class="main">
     <div class="body container">
         <?php include 'page-title.php'; ?>
@@ -95,9 +95,9 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
         </div>
     </div>
 </div>
-<script src="https://static.myhosts.ga/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://static.myhosts.ga/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="https://static.myhosts.ga/layer/3.5.1/layer.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alanyuewei/static@latest/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alanyuewei/static@latest/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alanyuewei/static@latest/layer/3.5.1/layer.js"></script>
 <script>
     var baseUrl = '<?php echo Helper::options()->index(); ?>';
     $('#getInfo').on('click', function () {
