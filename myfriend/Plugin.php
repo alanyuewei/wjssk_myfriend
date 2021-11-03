@@ -243,7 +243,7 @@ public static function config(Typecho_Widget_Helper_Form $form)
             $updateData['status'] = 2;
             $query                = $db->update('table.wjssk_myfriends')->rows($updateData)->where('id=?', $res['id']);
             $db->query($query);
-            echo '<script src="https://static.myhosts.ga/layer/3.5.1/layer.js"></script>';
+            echo '<script src="https://cdn.jsdelivr.net/gh/alanyuewei/static@latest/layer/3.5.1/layer.js"></script>';
             echo '<script>';
             echo 'layer.alert("欢迎您的加入，<br />【' . $res['title'] . '(' . $res['url'] . ')】",{title:"检测到有新的站点来源"})';
             echo '</script>';
