@@ -463,7 +463,7 @@ function trimall($str)
             </section>
         </aside>
     </div>
-    <script src="https://static.myhosts.ga/layer/3.5.1/layer.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alanyuewei/static@latest/layer/3.5.1/layer.js"></script>
     <script src="<?php echo $plugUrl . '/pages/static/js/js.of.joe.js'; ?>"></script>
     <?php $this->need('public/footer.php'); ?>
 </div>
