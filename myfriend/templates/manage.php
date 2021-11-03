@@ -253,8 +253,8 @@ $choFriendType = $request->get('__wjssk_friend_type') ?: Typecho_Cookie::get('__
         </div>
     </div>
 </div>
-<script src="https://static.myhosts.ga/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://static.myhosts.ga/layer/3.5.1/layer.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alanyuewei/static@latest/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alanyuewei/static@latest/layer/3.5.1/layer.js"></script>
 <script>
     $('.edit').on('click', function () {
         window.location.href = 'extending.php?panel=myfriend/templates/addFriend.php&id=' + $(this).data('id');
