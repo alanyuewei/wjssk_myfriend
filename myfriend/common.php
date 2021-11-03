@@ -81,7 +81,7 @@ function createTable()
             click_no int(11) NOT NULL DEFAULT '0' COMMENT '点击次数',
             visit_no int(11) NOT NULL DEFAULT '0' COMMENT '来访次数',
             last_visit_time datetime COMMENT '最后一次来访时间',
-            check_friend_url tinyint(1) NOT NULL DEFAULT '0' COMMENT '检测友链地址',
+            check_friend_url varchar(255) NOT NULL COMMENT '检测友链地址',
             check_time datetime NOT NULL COMMENT '检测时间',
             create_time datetime NOT NULL COMMENT '添加时间'
 	        ) " . $charset_collate . ";";
